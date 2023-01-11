@@ -3,7 +3,7 @@ function signUp() { //dont have an account
 }
 
 function signİn() { //back to sign in page
-    window.location.assign('./index.html')
+    window.location.assign('./')
 }
 
 function showMe() { // show its info
@@ -21,7 +21,7 @@ function showMe() { // show its info
 
 
 function geriDön() { //after "dont have an account" go back to sign in
-    window.location.assign('./index.html')
+    window.location.assign('./')
     //window.localStorage.removeItem('isim')
     //window.localStorage.removeItem('sifre')
 }
@@ -87,7 +87,7 @@ form.addEventListener("submit", (eventUp)=> {
     let passwordUp = form.elements.sifreup.value
     window.localStorage.setItem('isim', nameUp)
     window.localStorage.setItem('sifre',passwordUp)
-    window.location.assign('./index.html')
+    window.location.assign('./')
 })
 
 function refreshAgain() {
