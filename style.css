@@ -15,4 +15,5 @@
     position: fixed;
     right: 6% ;
     background-color: red;
+    border: 2px solid green;
 }
