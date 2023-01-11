@@ -1,0 +1,17 @@
+.card-in, .user-name, .password{
+    border: 3px solid green;
+}
+.card-in{
+    height: 50%;
+}
+.user-name, .password{
+    text-align: center;
+    height: 30%;
+}
+.sign-in{
+    margin-left: 6%;
+}
+.sign-up{
+    position: fixed;
+    right: 6% ;
+}
