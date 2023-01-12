@@ -98,7 +98,7 @@ form.addEventListener("submit", (eventUp)=> {
     window.localStorage.setItem('isim', nameUp)
     window.localStorage.setItem('sifre',passwordUp)
     window.localStorage.setItem('id', numberUp)
-    window.location.assign('./sign-in.html')
+    window.location.assign('./')
     }
     
 })
