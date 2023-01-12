@@ -85,9 +85,22 @@ form.addEventListener("submit", (eventUp)=> {
     eventUp.preventDefault();
     let nameUp = form.elements.kullaniciadi.value
     let passwordUp = form.elements.sifreup.value
+    let numberUp = form.elements.kullanıcıid.value
+    let numberUpCheck = window.localStorage.getItem('id')
+    if(numberUp==numberUpCheck) {
+        let uyari = document.createElement('strong')
+        uyari.textContent = "bu kullanıcı numarası daha önce kaydedilmiştir"
+        let divUp = document.querySelector('.card-up')
+        uyari.style.color="green"
+        uyari.style.backgroundColor="rgb(237, 180, 237)"
+        divUp.appendChild(uyari)
+    } else {
     window.localStorage.setItem('isim', nameUp)
     window.localStorage.setItem('sifre',passwordUp)
-    window.location.assign('./')
+    window.localStorage.setItem('id', numberUp)
+    window.location.assign('./sign-in.html')
+    }
+    
 })
 
 function refreshAgain() {
