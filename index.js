@@ -1,3 +1,4 @@
+// functions for our website
 function signUp() { //dont have an account
     window.location.assign('./sign-up.html')
 }
